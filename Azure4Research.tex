@@ -3,7 +3,7 @@
 \usepackage{url}
 \usepackage{paralist}
 \usepackage{authblk}
-%\usepackage[multiple]{footmisc}
+\usepackage{graphicx}
 \usepackage[pdftex,colorlinks=true,hyperfootnotes=false]{hyperref}
 
 \title{\vspace{-4em}A System for Automating Reproducibility in Science}
@@ -130,6 +130,15 @@ the results are published. The CI servers act as an authoritative
 source, analogous to the Linux Kernel
 Archives\footnote{\url{https://www.kernel.org/}}, of results for these
 algorithms running on these benchmarks.
+
+\subsection*{Workflow}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\columnwidth]{workflow.png}
+\caption{Proposed CI system workflow.}
+\label{fig:workflow}
+\end{figure}
 
 The objective of this proposal is to develop a system which, through
 integration with publicly available source code repositories automates
